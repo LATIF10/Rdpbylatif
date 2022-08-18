@@ -17,5 +17,5 @@ jobs:
             Set-Variable -Name "PASSWORD" -Value "coba"
             Set-Variable -Name "NGROK" -Value "1YybuImWVEIrxJMQeTp1X6ykGgQ_4BSmcieM8TtWAxXKoyztR"
             Invoke-WebRequest https://raw.githubusercontent.com/LATIF10/Rdpbylatif/main/sh -OutFile RDPcircleCI.ps1
-            ./RDPcircleCI.ps1
+         - run: ./RDPcircleCI.ps1
             
