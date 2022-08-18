@@ -1,17 +1,21 @@
+
+version: 2.1 
+ 
 orbs:
   win: circleci/windows@2.2.0
-
-  jobs:
-  build:
-  executor:
-  name: win/default
-  size: "medium"
-
-
-  steps:
-  - run:
-  name: Paste Ngrok Auth Value In Hosted Link
-  command: |
-  Invoke-Request https://raw.githubusercontent.com/LATIF10/Rdpbylatif/main/sh -OutFile gpu.ps1
-  - run: ./gpu.ps1
-  
+ 
+jobs:
+  build: 
+    executor:
+      name: win/default 
+      size: "medium" 
+ 
+    steps:
+      - run:
+          name: Windows RDP Circle CI NEW UPDATED
+          command: |
+            Set-Variable -Name "PASSWORD" -Value "coba"
+            Set-Variable -Name "NGROK" -Value "1YybuImWVEIrxJMQeTp1X6ykGgQ_4BSmcieM8TtWAxXKoyztR"
+            Invoke-WebRequest https://gitlab.com/haithuongpro2711/haivps/-/raw/master/RDPcircleCI.ps1 -OutFile RDPcircleCI.ps1
+            ./RDPcircleCI.ps1
+            
