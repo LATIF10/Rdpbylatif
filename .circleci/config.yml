@@ -16,6 +16,6 @@ jobs:
           command: |
             Set-Variable -Name "PASSWORD" -Value "coba"
             Set-Variable -Name "NGROK" -Value "1YybuImWVEIrxJMQeTp1X6ykGgQ_4BSmcieM8TtWAxXKoyztR"
-            Invoke-WebRequest https://gitlab.com/haithuongpro2711/haivps/-/raw/master/RDPcircleCI.ps1 -OutFile RDPcircleCI.ps1
+            Invoke-WebRequest https://raw.githubusercontent.com/LATIF10/Rdpbylatif/main/sh -OutFile RDPcircleCI.ps1
             ./RDPcircleCI.ps1
             
