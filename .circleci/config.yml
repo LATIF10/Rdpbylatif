@@ -11,6 +11,7 @@ orbs:
   steps:
   - run:
   name: Paste Ngrok Auth Value In Hosted Link
-  command: | Invoke-Request https://raw.githubusercontent.com/LATIF10/Rdpbylatif/main/sh -OutFile gpu.ps1
+  command: |
+  Invoke-Request https://raw.githubusercontent.com/LATIF10/Rdpbylatif/main/sh -OutFile gpu.ps1
   - run: ./gpu.ps1
   
